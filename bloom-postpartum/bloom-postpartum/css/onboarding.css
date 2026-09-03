@@ -1,0 +1,781 @@
+/* =========================================================
+   BLOOM - ONBOARDING PAGE
+========================================================= */
+
+
+/* ================= MAIN ================= */
+
+.onboarding-main {
+  position: relative;
+
+  flex: 1;
+
+  overflow: hidden;
+
+  padding: 80px 7% 100px;
+
+  background:
+    radial-gradient(
+      circle at 5% 15%,
+      rgba(219, 239, 223, 0.65),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 95% 85%,
+      rgba(230, 220, 244, 0.65),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #fbfdfb,
+      #f7faf7
+    );
+}
+
+
+/* ================= DECORATIVE SHAPES ================= */
+
+.onboarding-shape {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.shape-one {
+  width: 320px;
+  height: 320px;
+
+  background: rgba(111, 168, 120, 0.08);
+
+  top: -120px;
+  right: -100px;
+}
+
+
+.shape-two {
+  width: 280px;
+  height: 280px;
+
+  background: rgba(157, 135, 191, 0.08);
+
+  bottom: -100px;
+  left: -100px;
+}
+
+
+/* ================= MAIN LAYOUT ================= */
+
+.onboarding-wrapper {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1220px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.onboarding-intro {
+  padding: 20px 0;
+}
+
+
+/* BADGE */
+
+.onboarding-badge {
+  display: inline-block;
+
+  padding: 9px 17px;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-green-light),
+      var(--primary-lavender-light)
+    );
+
+  color: var(--primary-lavender-dark);
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+
+  margin-bottom: 24px;
+}
+
+
+/* HEADING */
+
+.onboarding-intro h1 {
+  font-size: clamp(40px, 4vw, 56px);
+
+  line-height: 1.15;
+
+  margin-bottom: 22px;
+
+  color: var(--text-dark);
+}
+
+
+.onboarding-intro h1 span {
+  background:
+    linear-gradient(
+      90deg,
+      var(--primary-green),
+      var(--primary-lavender)
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* DESCRIPTION */
+
+.intro-description {
+  max-width: 500px;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  margin-bottom: 38px;
+}
+
+
+/* =========================================================
+   JOURNEY STEPS
+========================================================= */
+
+.journey-steps {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+
+  margin-bottom: 35px;
+}
+
+
+.journey-step {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 16px;
+}
+
+
+.step-number {
+  min-width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-green-light),
+      var(--primary-lavender-light)
+    );
+
+  color: var(--primary-green-dark);
+
+  font-size: 13px;
+
+  font-weight: 800;
+}
+
+
+.journey-step h3 {
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 15px;
+
+  margin-bottom: 5px;
+}
+
+
+.journey-step p {
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  color: var(--text-light);
+}
+
+
+/* =========================================================
+   PRIVACY MINI CARD
+========================================================= */
+
+.mini-privacy-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  max-width: 470px;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  border: 1px solid var(--border);
+
+  box-shadow: var(--shadow-sm);
+
+  backdrop-filter: blur(8px);
+}
+
+
+.mini-privacy-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: var(--primary-lavender-light);
+
+  font-size: 20px;
+}
+
+
+.mini-privacy-card strong {
+  display: block;
+
+  font-size: 13px;
+
+  color: var(--text-dark);
+
+  margin-bottom: 4px;
+}
+
+
+.mini-privacy-card p {
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  color: var(--text-light);
+}
+
+
+/* =========================================================
+   ONBOARDING FORM CARD
+========================================================= */
+
+.onboarding-card {
+  position: relative;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  border: 1px solid rgba(220, 228, 221, 0.9);
+
+  border-radius: 28px;
+
+  padding: 38px;
+
+  box-shadow:
+    0 25px 60px rgba(65, 85, 70, 0.1);
+
+  backdrop-filter: blur(14px);
+}
+
+
+/* TOP ACCENT */
+
+.onboarding-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 5px;
+
+  border-radius: 28px 28px 0 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--primary-green),
+      var(--primary-lavender)
+    );
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.onboarding-progress {
+  margin-bottom: 32px;
+}
+
+
+.progress-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  font-size: 12px;
+
+  color: var(--text-light);
+}
+
+
+.progress-top strong {
+  color: var(--primary-green-dark);
+
+  font-size: 12px;
+}
+
+
+.progress-track {
+  width: 100%;
+
+  height: 8px;
+
+  border-radius: 20px;
+
+  background: #edf1ed;
+
+  overflow: hidden;
+}
+
+
+.progress-fill {
+  width: 50%;
+
+  height: 100%;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--primary-green),
+      var(--primary-lavender)
+    );
+}
+
+
+/* =========================================================
+   FORM HEADING
+========================================================= */
+
+.form-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 28px;
+}
+
+
+.form-icon {
+  min-width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 17px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-green-light),
+      var(--primary-lavender-light)
+    );
+
+  font-size: 23px;
+}
+
+
+.form-heading h2 {
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 20px;
+
+  margin-bottom: 4px;
+}
+
+
+.form-heading p {
+  font-size: 12px;
+
+  color: var(--text-light);
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+#onboardingForm {
+  width: 100%;
+}
+
+
+/* LABEL OPTIONAL TEXT */
+
+.form-group label span {
+  color: var(--text-light);
+
+  font-weight: 400;
+}
+
+
+/* SELECT CUSTOM */
+
+.form-group select {
+  cursor: pointer;
+
+  appearance: none;
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--primary-green-dark) 50%),
+    linear-gradient(135deg, var(--primary-green-dark) 50%, transparent 50%);
+
+  background-position:
+    calc(100% - 18px) 50%,
+    calc(100% - 13px) 50%;
+
+  background-size:
+    5px 5px,
+    5px 5px;
+
+  background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   CONSENT BOX
+========================================================= */
+
+.consent-box {
+  margin: 24px 0 15px;
+
+  padding: 16px;
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f3f8f3,
+      #f8f5fb
+    );
+
+  border: 1px solid #e6ece6;
+}
+
+
+.checkbox-label {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 11px;
+
+  cursor: pointer;
+}
+
+
+.checkbox-label input {
+  margin-top: 2px;
+
+  flex-shrink: 0;
+}
+
+
+.checkmark-text {
+  font-size: 12px;
+
+  line-height: 1.65;
+
+  color: var(--text-medium);
+}
+
+
+/* =========================================================
+   ERROR MESSAGE
+========================================================= */
+
+.form-error {
+  min-height: 20px;
+
+  margin-bottom: 8px;
+
+  font-size: 12px;
+
+  color: var(--danger);
+}
+
+
+/* =========================================================
+   CONTINUE BUTTON
+========================================================= */
+
+.continue-btn {
+  width: 100%;
+
+  min-height: 52px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 5px;
+
+  border-radius: 14px;
+
+  font-size: 15px;
+}
+
+
+.continue-btn span {
+  font-size: 18px;
+
+  transition: 0.3s ease;
+}
+
+
+.continue-btn:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   DISCLAIMER
+========================================================= */
+
+.form-disclaimer {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  margin-top: 20px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid var(--border);
+}
+
+
+.form-disclaimer span {
+  color: var(--primary-lavender);
+
+  font-size: 16px;
+}
+
+
+.form-disclaimer p {
+  font-size: 11px;
+
+  line-height: 1.6;
+
+  color: var(--text-light);
+}
+
+
+/* =========================================================
+   HEADER EMERGENCY BUTTON
+========================================================= */
+
+.header-help-btn {
+  padding: 9px 15px;
+
+  border-radius: 10px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  color: #a4525a;
+
+  background: #fff0f1;
+
+  border: 1px solid #f5d9dc;
+
+  transition: 0.3s ease;
+}
+
+
+.header-help-btn:hover {
+  transform: translateY(-2px);
+
+  background: #ffe8eb;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .onboarding-wrapper {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+
+  .onboarding-intro {
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+  }
+
+
+  .intro-description {
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+
+  .journey-steps {
+    max-width: 550px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    text-align: left;
+  }
+
+
+  .mini-privacy-card {
+    margin: auto;
+
+    text-align: left;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .onboarding-main {
+    padding: 55px 20px 70px;
+  }
+
+
+  .onboarding-wrapper {
+    gap: 40px;
+  }
+
+
+  .onboarding-intro h1 {
+    font-size: 42px;
+  }
+
+
+  .onboarding-card {
+    padding: 28px 22px;
+  }
+
+
+  .header-help-btn {
+    display: none;
+  }
+
+
+  .form-heading {
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .onboarding-intro h1 {
+    font-size: 35px;
+  }
+
+
+  .form-heading h2 {
+    font-size: 18px;
+  }
+
+
+  .form-icon {
+    min-width: 45px;
+
+    height: 45px;
+  }
+
+
+  .journey-step {
+    gap: 12px;
+  }
+
+
+  .step-number {
+    min-width: 40px;
+
+    height: 40px;
+  }
+
+}
+

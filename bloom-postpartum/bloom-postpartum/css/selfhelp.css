@@ -1,0 +1,924 @@
+/* =========================================================
+   BLOOM - SELF HELP & RESOURCE LIBRARY
+========================================================= */
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.selfhelp-main {
+  background: #fbfdfb;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.selfhelp-container {
+  width: min(1180px, 90%);
+  margin: auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.selfhelp-hero {
+  position: relative;
+
+  padding: 75px 0 90px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f2faf3 0%,
+      #fbfdfb 50%,
+      #f8f3fb 100%
+    );
+}
+
+
+.selfhelp-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  border-radius: 50%;
+
+  top: -180px;
+  right: -130px;
+
+  background: rgba(157, 135, 191, 0.10);
+}
+
+
+.selfhelp-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  bottom: -180px;
+  left: -100px;
+
+  background: rgba(111, 168, 120, 0.09);
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns: 1.3fr 0.7fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   HERO LEFT
+========================================================= */
+
+.selfhelp-tag {
+  display: inline-block;
+
+  padding: 9px 16px;
+
+  margin-bottom: 20px;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-green-light),
+      var(--primary-lavender-light)
+    );
+
+  color: var(--primary-lavender-dark);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+
+.hero-left h1 {
+  max-width: 700px;
+
+  font-size: clamp(42px, 5vw, 64px);
+
+  line-height: 1.12;
+
+  margin-bottom: 20px;
+}
+
+
+.hero-left h1 span {
+  display: block;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--primary-green),
+      var(--primary-lavender)
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+.hero-left > p {
+  max-width: 650px;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.resource-search {
+  width: min(100%, 560px);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 7px 8px 7px 18px;
+
+  border-radius: 16px;
+
+  background: white;
+
+  border: 1px solid var(--border);
+
+  box-shadow:
+    0 12px 30px rgba(75, 125, 84, 0.08);
+
+  transition: 0.25s ease;
+}
+
+
+.resource-search:focus-within {
+  border-color: var(--primary-green);
+
+  box-shadow:
+    0 0 0 4px rgba(111, 168, 120, 0.10);
+}
+
+
+.search-icon {
+  color: var(--primary-green-dark);
+
+  font-size: 24px;
+
+  font-weight: 500;
+}
+
+
+.resource-search input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  padding: 12px 0;
+
+  background: transparent;
+
+  color: var(--text-dark);
+
+  font-family: inherit;
+
+  font-size: 13px;
+}
+
+
+.resource-search input::placeholder {
+  color: #9aa7a0;
+}
+
+
+/* =========================================================
+   HERO SUPPORT CARD
+========================================================= */
+
+.hero-support-card {
+  padding: 32px;
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f6f3fa
+    );
+
+  border: 1px solid rgba(157, 135, 191, 0.18);
+
+  box-shadow:
+    0 20px 45px rgba(75, 125, 84, 0.10);
+}
+
+
+.support-card-icon {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-green-light),
+      var(--primary-lavender-light)
+    );
+
+  font-size: 28px;
+}
+
+
+.hero-support-card > span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--primary-lavender-dark);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+
+.hero-support-card h3 {
+  margin-bottom: 12px;
+
+  font-size: 24px;
+
+  line-height: 1.4;
+}
+
+
+.hero-support-card p {
+  margin-bottom: 22px;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  color: var(--text-light);
+}
+
+
+.hero-support-card a {
+  color: var(--primary-green-dark);
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   CATEGORY SECTION
+========================================================= */
+
+.category-section {
+  padding: 80px 0 35px;
+
+  background: #fbfdfb;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+  max-width: 700px;
+
+  margin-bottom: 35px;
+}
+
+
+.section-heading > span {
+  color: var(--primary-green-dark);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.3px;
+}
+
+
+.section-heading h2 {
+  margin: 10px 0 12px;
+
+  font-size: clamp(30px, 4vw, 44px);
+}
+
+
+.section-heading p {
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: var(--text-light);
+}
+
+
+/* =========================================================
+   CATEGORY FILTER BUTTONS
+========================================================= */
+
+.category-filters {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+
+.filter-btn {
+  padding: 11px 18px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 30px;
+
+  background: white;
+
+  color: var(--text-medium);
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+
+.filter-btn:hover {
+  border-color: var(--primary-green);
+
+  color: var(--primary-green-dark);
+
+  transform: translateY(-2px);
+}
+
+
+.filter-btn.active {
+  border-color: transparent;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-green),
+      var(--primary-lavender)
+    );
+
+  color: white;
+
+  box-shadow:
+    0 8px 18px rgba(111, 168, 120, 0.18);
+}
+
+
+/* =========================================================
+   RESOURCE LIBRARY
+========================================================= */
+
+.resource-library-section {
+  padding: 45px 0 90px;
+
+  background: #fbfdfb;
+}
+
+
+/* =========================================================
+   RESOURCE GRID
+========================================================= */
+
+.resource-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+
+/* =========================================================
+   RESOURCE CARD
+========================================================= */
+
+.resource-card {
+  position: relative;
+
+  min-height: 310px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 28px;
+
+  border-radius: 24px;
+
+  background: white;
+
+  border: 1px solid var(--border);
+
+  overflow: hidden;
+
+  transition: 0.3s ease;
+}
+
+
+.resource-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 140px;
+  height: 140px;
+
+  border-radius: 50%;
+
+  right: -70px;
+  bottom: -70px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(111, 168, 120, 0.07),
+      rgba(157, 135, 191, 0.08)
+    );
+}
+
+
+.resource-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(111, 168, 120, 0.35);
+
+  box-shadow:
+    0 20px 40px rgba(75, 125, 84, 0.12);
+}
+
+
+/* CARD TOP */
+
+.resource-card-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  margin-bottom: 25px;
+}
+
+
+.resource-icon {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  font-size: 24px;
+}
+
+
+.green-bg {
+  background: var(--primary-green-light);
+}
+
+
+.lavender-bg {
+  background: var(--primary-lavender-light);
+}
+
+
+.mixed-bg {
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-green-light),
+      var(--primary-lavender-light)
+    );
+}
+
+
+.resource-category {
+  padding: 7px 10px;
+
+  border-radius: 20px;
+
+  background: #f7f8f7;
+
+  color: var(--text-light);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+
+/* CARD CONTENT */
+
+.resource-card h3 {
+  margin-bottom: 12px;
+
+  font-size: 19px;
+
+  line-height: 1.4;
+}
+
+
+.resource-card p {
+  font-size: 13px;
+
+  line-height: 1.75;
+
+  color: var(--text-light);
+}
+
+
+.resource-link {
+  position: relative;
+  z-index: 2;
+
+  margin-top: auto;
+
+  padding-top: 20px;
+
+  color: var(--primary-green-dark);
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+
+.resource-link:hover {
+  color: var(--primary-lavender-dark);
+
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   NO RESULTS
+========================================================= */
+
+.no-results {
+  display: none;
+
+  padding: 70px 20px;
+
+  text-align: center;
+}
+
+
+.no-results div {
+  margin-bottom: 15px;
+
+  font-size: 45px;
+}
+
+
+.no-results h3 {
+  margin-bottom: 8px;
+
+  font-size: 22px;
+}
+
+
+.no-results p {
+  color: var(--text-light);
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   QUICK SUPPORT SECTION
+========================================================= */
+
+.quick-support-section {
+  padding: 0 0 90px;
+
+  background: #fbfdfb;
+}
+
+
+.quick-support-box {
+  position: relative;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 40px;
+
+  padding: 48px;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eaf5ec,
+      #f5eff9
+    );
+
+  border: 1px solid rgba(157, 135, 191, 0.12);
+}
+
+
+.quick-support-box::before {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  border-radius: 50%;
+
+  right: -100px;
+  top: -120px;
+
+  background: rgba(255, 255, 255, 0.35);
+}
+
+
+.quick-support-content,
+.quick-support-actions {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.quick-support-content {
+  max-width: 620px;
+}
+
+
+.quick-support-content > span {
+  color: var(--primary-lavender-dark);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.3px;
+}
+
+
+.quick-support-content h2 {
+  margin: 12px 0;
+
+  font-size: clamp(28px, 3vw, 40px);
+}
+
+
+.quick-support-content p {
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: var(--text-medium);
+}
+
+
+.quick-support-actions {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  min-width: 230px;
+}
+
+
+.primary-support-btn,
+.secondary-support-btn {
+  display: inline-flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 48px;
+
+  padding: 0 20px;
+
+  border-radius: 13px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+
+.primary-support-btn {
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-green),
+      var(--primary-green-dark)
+    );
+
+  color: white;
+
+  box-shadow:
+    0 8px 20px rgba(75, 125, 84, 0.18);
+}
+
+
+.secondary-support-btn {
+  background: white;
+
+  color: var(--primary-lavender-dark);
+
+  border: 1px solid rgba(157, 135, 191, 0.25);
+}
+
+
+.primary-support-btn:hover,
+.secondary-support-btn:hover {
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .hero-content {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+
+  .hero-support-card {
+    max-width: 500px;
+  }
+
+
+  .resource-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .quick-support-box {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .quick-support-actions {
+    width: 100%;
+
+    flex-direction: row;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .selfhelp-hero {
+    padding: 55px 0 70px;
+  }
+
+
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .quick-support-actions {
+    flex-direction: column;
+  }
+
+
+  .quick-support-box {
+    padding: 30px 25px;
+  }
+
+}
+
+
+@media (max-width: 520px) {
+
+  .selfhelp-container {
+    width: min(92%, 1180px);
+  }
+
+
+  .hero-left h1 {
+    font-size: 38px;
+  }
+
+
+  .category-filters {
+    gap: 8px;
+  }
+
+
+  .filter-btn {
+    font-size: 11px;
+
+    padding: 10px 14px;
+  }
+
+
+  .resource-card {
+    min-height: 290px;
+
+    padding: 24px;
+  }
+
+}

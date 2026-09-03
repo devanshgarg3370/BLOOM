@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BLOOM | Profile & Settings</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+<link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/profile.css">
+</head>
+
+<body>
+
+<div class="profile-page">
+
+  <!-- =========================================
+       HEADER
+  ========================================= -->
+
+  <header class="bloom-header">
+
+    <div class="brand">
+      <div class="brand-logo">✿</div>
+
+      <div class="brand-text">
+        <h2>BLOOM</h2>
+        <span>Wellness & Support</span>
+      </div>
+    </div>
+
+
+    <nav class="bloom-nav">
+      <a href="index.html">Home</a>
+      <a href="screening.html">Screening</a>
+      <a href="resources.html">Resources</a>
+      <a href="emergency.html">Emergency</a>
+      <a href="profile.html" class="active">Profile</a>
+    </nav>
+
+
+    <div class="header-profile">
+
+      <div class="header-avatar">
+        B
+      </div>
+
+      <span>My Account</span>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =========================================
+       HERO
+  ========================================= -->
+
+  <section class="profile-hero">
+
+    <div class="profile-container">
+
+      <div class="profile-hero-content">
+
+        <div class="profile-badge">
+          <span class="badge-dot"></span>
+          MY BLOOM
+        </div>
+
+        <h1>
+          Your profile,
+          <span>your space.</span>
+        </h1>
+
+        <p>
+          Manage your personal information, review your screening
+          history, and control your privacy preferences in one place.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================
+       MAIN CONTENT
+  ========================================= -->
+
+  <main class="profile-main">
+
+    <div class="profile-container">
+
+
+      <!-- =====================================
+           PROFILE OVERVIEW
+      ===================================== -->
+
+      <section class="profile-overview">
+
+        <div class="profile-avatar">
+          B
+        </div>
+
+        <div class="profile-info">
+
+          <span class="member-label">
+            BLOOM MEMBER
+          </span>
+
+          <h2 id="displayName">
+            Bloom User
+          </h2>
+
+          <p id="displayEmail">
+            user@example.com
+          </p>
+
+          <div class="account-status">
+            <span></span>
+            Account active
+          </div>
+
+        </div>
+
+        <button
+          class="edit-btn"
+          id="editProfileBtn"
+        >
+          Edit Profile
+        </button>
+
+      </section>
+
+
+
+      <!-- =====================================
+           PERSONAL INFORMATION
+      ===================================== -->
+
+      <section class="profile-section">
+
+        <div class="section-heading">
+
+          <span class="section-label">
+            PERSONAL INFORMATION
+          </span>
+
+          <h2>Basic details</h2>
+
+          <p>
+            Keep your information up to date for a more
+            personalized BLOOM experience.
+          </p>
+
+        </div>
+
+
+        <div class="personal-card">
+
+          <div class="form-grid">
+
+
+            <div class="form-group">
+
+              <label for="fullName">
+                Full Name
+              </label>
+
+              <input
+                type="text"
+                id="fullName"
+                value="Bloom User"
+                disabled
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">
+                Email Address
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                value="user@example.com"
+                disabled
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="phone">
+                Phone Number
+              </label>
+
+              <input
+                type="text"
+                id="phone"
+                value="+91 98765 43210"
+                disabled
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="age">
+                Age
+              </label>
+
+              <input
+                type="number"
+                id="age"
+                value="21"
+                disabled
+              >
+
+            </div>
+
+          </div>
+
+
+          <div class="save-area">
+
+            <button
+              class="save-btn"
+              id="saveProfileBtn"
+            >
+              Save Changes
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =====================================
+           TWO FEATURE CARDS
+      ===================================== -->
+
+      <section class="feature-grid">
+
+
+        <!-- SCREENING HISTORY -->
+
+        <div class="feature-card lavender-card">
+
+          <div class="feature-icon lavender-icon">
+            ◷
+          </div>
+
+          <div>
+
+            <span class="card-label">
+              YOUR JOURNEY
+            </span>
+
+            <h3>
+              Screening History
+            </h3>
+
+            <p>
+              Review your previous wellness screenings
+              and keep track of your journey.
+            </p>
+
+            <button
+              class="feature-btn lavender-btn"
+              id="historyBtn"
+            >
+              View History
+              <span>→</span>
+            </button>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- PRIVACY -->
+
+        <div class="feature-card green-card">
+
+          <div class="feature-icon green-icon">
+            ◇
+          </div>
+
+          <div>
+
+            <span class="card-label">
+              YOUR CONTROL
+            </span>
+
+            <h3>
+              Privacy & Data
+            </h3>
+
+            <p>
+              Choose what information BLOOM saves and
+              how your data is used.
+            </p>
+
+            <button
+              class="feature-btn green-btn"
+              id="privacyBtn"
+            >
+              Manage Privacy
+              <span>→</span>
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =====================================
+           SCREENING HISTORY
+      ===================================== -->
+
+      <section
+        class="history-section"
+        id="historySection"
+      >
+
+        <div class="section-heading history-heading">
+
+          <span class="section-label">
+            RECENT ACTIVITY
+          </span>
+
+          <h2>Your screening history</h2>
+
+          <p>
+            Your previous screening activity is shown below.
+          </p>
+
+        </div>
+
+
+        <div class="history-card">
+
+
+          <div class="history-item">
+
+            <div class="history-date">
+              <strong>12</strong>
+              <span>JUN</span>
+            </div>
+
+            <div class="history-details">
+
+              <h3>
+                Wellness Screening
+              </h3>
+
+              <p>
+                Screening completed successfully
+              </p>
+
+            </div>
+
+            <span class="completed">
+              Completed
+            </span>
+
+          </div>
+
+
+          <div class="history-item">
+
+            <div class="history-date">
+              <strong>28</strong>
+              <span>MAY</span>
+            </div>
+
+            <div class="history-details">
+
+              <h3>
+                Wellness Screening
+              </h3>
+
+              <p>
+                Screening completed successfully
+              </p>
+
+            </div>
+
+            <span class="completed">
+              Completed
+            </span>
+
+          </div>
+
+
+          <div class="history-item">
+
+            <div class="history-date">
+              <strong>04</strong>
+              <span>MAY</span>
+            </div>
+
+            <div class="history-details">
+
+              <h3>
+                Initial Screening
+              </h3>
+
+              <p>
+                Screening completed successfully
+              </p>
+
+            </div>
+
+            <span class="completed">
+              Completed
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =====================================
+           PRIVACY & DATA
+      ===================================== -->
+
+      <section
+        class="profile-section privacy-section"
+        id="privacySection"
+      >
+
+        <div class="section-heading">
+
+          <span class="section-label">
+            PRIVACY & DATA
+          </span>
+
+          <h2>
+            You're in control.
+          </h2>
+
+          <p>
+            Manage what BLOOM saves and how we communicate
+            with you.
+          </p>
+
+        </div>
+
+
+        <div class="privacy-card">
+
+
+          <!-- SAVE HISTORY -->
+
+          <div class="privacy-row">
+
+            <div class="privacy-icon">
+              ◫
+            </div>
+
+            <div class="privacy-content">
+
+              <h3>
+                Save screening history
+              </h3>
+
+              <p>
+                Keep your previous screening records available
+                in your BLOOM account.
+              </p>
+
+            </div>
+
+            <button
+              class="toggle active"
+              data-setting="history"
+            >
+              <span></span>
+            </button>
+
+          </div>
+
+
+          <div class="privacy-divider"></div>
+
+
+          <!-- ANONYMOUS DATA -->
+
+          <div class="privacy-row">
+
+            <div class="privacy-icon">
+              ◇
+            </div>
+
+            <div class="privacy-content">
+
+              <h3>
+                Anonymous improvement data
+              </h3>
+
+              <p>
+                Allow anonymous information to help improve
+                BLOOM's experience.
+              </p>
+
+            </div>
+
+            <button
+              class="toggle"
+              data-setting="anonymous"
+            >
+              <span></span>
+            </button>
+
+          </div>
+
+
+          <div class="privacy-divider"></div>
+
+
+          <!-- NOTIFICATIONS -->
+
+          <div class="privacy-row">
+
+            <div class="privacy-icon">
+              ♧
+            </div>
+
+            <div class="privacy-content">
+
+              <h3>
+                Wellness reminders
+              </h3>
+
+              <p>
+                Receive helpful reminders and updates from BLOOM.
+              </p>
+
+            </div>
+
+            <button
+              class="toggle active"
+              data-setting="notifications"
+            >
+              <span></span>
+            </button>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =====================================
+           APPEARANCE
+      ===================================== -->
+
+      <section class="profile-section">
+
+        <div class="section-heading">
+
+          <span class="section-label">
+            APPEARANCE
+          </span>
+
+          <h2>
+            Make BLOOM feel like yours.
+          </h2>
+
+          <p>
+            Choose the visual experience that feels most
+            comfortable for you.
+          </p>
+
+        </div>
+
+
+        <div class="theme-card">
+
+
+          <div class="theme-preview">
+
+            <div class="preview-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="preview-body">
+
+              <div class="preview-sidebar"></div>
+
+              <div class="preview-content">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <div class="preview-box"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="theme-information">
+
+            <span class="card-label">
+              CURRENT THEME
+            </span>
+
+            <h3 id="themeName">
+              Bloom Light
+            </h3>
+
+            <p id="themeDescription">
+              A calm green and lavender interface designed
+              for clarity and comfort.
+            </p>
+
+            <button
+              class="theme-btn"
+              id="themeBtn"
+            >
+              Try Dark Mode
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =====================================
+           ACCOUNT SETTINGS
+      ===================================== -->
+
+      <section class="profile-section account-section">
+
+        <div class="section-heading">
+
+          <span class="section-label">
+            ACCOUNT
+          </span>
+
+          <h2>
+            Account settings
+          </h2>
+
+          <p>
+            Manage your account access and preferences.
+          </p>
+
+        </div>
+
+
+        <div class="account-card">
+
+
+          <button class="account-row">
+
+            <div class="account-icon">
+              🔒
+            </div>
+
+            <div class="account-text">
+
+              <h3>
+                Change Password
+              </h3>
+
+              <p>
+                Update your account password
+              </p>
+
+            </div>
+
+            <span class="arrow">
+              →
+            </span>
+
+          </button>
+
+
+          <div class="account-divider"></div>
+
+
+          <button class="account-row">
+
+            <div class="account-icon">
+              🔔
+            </div>
+
+            <div class="account-text">
+
+              <h3>
+                Notification Preferences
+              </h3>
+
+              <p>
+                Choose what notifications you receive
+              </p>
+
+            </div>
+
+            <span class="arrow">
+              →
+            </span>
+
+          </button>
+
+
+          <div class="account-divider"></div>
+
+
+          <button
+            class="account-row logout-row"
+            id="logoutBtn"
+          >
+
+            <div class="account-icon">
+              ↪
+            </div>
+
+            <div class="account-text">
+
+              <h3>
+                Log Out
+              </h3>
+
+              <p>
+                Sign out of your BLOOM account
+              </p>
+
+            </div>
+
+            <span class="arrow">
+              →
+            </span>
+
+          </button>
+
+
+          <div class="account-divider"></div>
+
+
+          <button
+            class="account-row delete-row"
+            id="deleteBtn"
+          >
+
+            <div class="account-icon">
+              ×
+            </div>
+
+            <div class="account-text">
+
+              <h3>
+                Delete Account
+              </h3>
+
+              <p>
+                Permanently remove your BLOOM account
+              </p>
+
+            </div>
+
+            <span class="arrow">
+              →
+            </span>
+
+          </button>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =====================================
+           PRIVACY MESSAGE
+      ===================================== -->
+
+      <section class="privacy-message">
+
+        <div class="privacy-message-icon">
+          ♡
+        </div>
+
+        <div>
+
+          <h3>
+            Your privacy matters to us.
+          </h3>
+
+          <p>
+            BLOOM is designed to give you control over your
+            information. You can review and change your
+            preferences whenever you want.
+          </p>
+
+        </div>
+
+      </section>
+
+
+    </div>
+
+  </main>
+
+
+
+  <!-- =========================================
+       FOOTER
+  ========================================= -->
+
+  <footer class="bloom-footer">
+
+    <div class="footer-content">
+
+
+      <div class="footer-brand">
+
+        <div class="footer-logo">
+          ✿
+        </div>
+
+        <div>
+
+          <h3>BLOOM</h3>
+
+          <p>
+            A safe space to understand,
+            reflect and grow.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="screening.html">Screening</a>
+        <a href="resources.html">Resources</a>
+        <a href="emergency.html">Emergency</a>
+
+      </div>
+
+
+      <div class="footer-copy">
+
+        © 2026 BLOOM. Your wellbeing matters.
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+</div>
+
+<script src="/js/main.js"></script>
+<script src="/js/profile.js"></script>
+
+</body>
+</html>

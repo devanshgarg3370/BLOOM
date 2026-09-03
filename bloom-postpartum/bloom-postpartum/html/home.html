@@ -1,0 +1,673 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="BLOOM postpartum well-being dashboard and support center."
+  >
+
+  <title>Home | BLOOM</title>
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Home Page CSS -->
+  <link rel="stylesheet" href="/css/home.css">
+
+</head>
+
+
+<body>
+
+  <div class="page-container">
+
+
+    <!-- =====================================================
+         SAME HEADER FOR ALL BLOOM PAGES
+    ====================================================== -->
+
+    <header class="bloom-header">
+
+      <a href="index.html" class="brand">
+
+        <div class="brand-icon">✿</div>
+
+        <div class="brand-text">
+          <h2>BLOOM</h2>
+          <span>Postpartum Well-Being</span>
+        </div>
+
+      </a>
+
+
+      <nav class="nav-links">
+
+        <a href="home.html">Home</a>
+
+        <a href="selfhelp.html">Resources</a>
+
+        <a href="healthcare.html">Support</a>
+
+      </nav>
+
+
+      <button class="profile-btn" aria-label="Open Profile">
+        <span class="user-initial">B</span>
+      </button>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN HOME CONTENT
+    ====================================================== -->
+
+    <main class="home-main">
+
+
+      <!-- ================= WELCOME HERO ================= -->
+
+      <section class="dashboard-hero">
+
+        <div class="hero-decoration decoration-one"></div>
+        <div class="hero-decoration decoration-two"></div>
+
+
+        <div class="dashboard-container">
+
+
+          <!-- LEFT SIDE -->
+
+          <div class="dashboard-welcome">
+
+            <div class="dashboard-badge">
+
+              <span class="status-dot"></span>
+
+              YOUR WELL-BEING SPACE
+
+            </div>
+
+
+            <h1>
+              Hello,
+              <span class="user-name">Friend</span> 🌿
+            </h1>
+
+
+            <p>
+
+              This is your space to pause, check in, and find
+              the support that feels right for you. You don't
+              have to navigate the postpartum journey alone.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+              <a href="screening.html" class="primary-btn">
+
+                Start a Well-Being Check
+
+                <span>→</span>
+
+              </a>
+
+
+              <a href="selfhelp.html" class="secondary-btn">
+
+                Explore Resources
+
+              </a>
+
+            </div>
+
+
+          </div>
+
+
+          <!-- RIGHT SIDE WELLNESS CARD -->
+
+          <div class="daily-check-card">
+
+
+            <div class="check-card-top">
+
+              <div>
+
+                <span class="small-label">
+                  TODAY'S GENTLE REMINDER
+                </span>
+
+                <h3>
+                  How are you feeling today?
+                </h3>
+
+              </div>
+
+              <div class="sun-icon">
+                ☀
+              </div>
+
+            </div>
+
+
+            <p class="check-card-text">
+
+              There's no right answer. Taking a moment to notice
+              how you feel is already a meaningful step.
+
+            </p>
+
+
+            <div class="mood-options">
+
+              <button class="mood-btn" data-mood="good">
+                😊
+                <span>Good</span>
+              </button>
+
+              <button class="mood-btn" data-mood="okay">
+                😐
+                <span>Okay</span>
+              </button>
+
+              <button class="mood-btn" data-mood="low">
+                😔
+                <span>Low</span>
+              </button>
+
+              <button class="mood-btn" data-mood="overwhelmed">
+                😣
+                <span>Overwhelmed</span>
+              </button>
+
+            </div>
+
+
+            <p id="moodMessage" class="mood-message"></p>
+
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= QUICK ACTIONS ================= -->
+
+      <section class="quick-section">
+
+        <div class="section-container">
+
+
+          <div class="section-header">
+
+            <div>
+
+              <span class="section-tag">
+                QUICK ACCESS
+              </span>
+
+              <h2>
+                What would help you today?
+              </h2>
+
+            </div>
+
+
+            <p>
+
+              Choose a space that feels most useful right now.
+            </p>
+
+          </div>
+
+
+          <div class="quick-grid">
+
+
+            <!-- SCREENING -->
+
+            <a href="screening.html" class="quick-card screening-card">
+
+              <div class="quick-icon lavender-icon">
+                ✓
+              </div>
+
+              <h3>Well-Being Check</h3>
+
+              <p>
+                Take a guided check-in to better understand how
+                you've been feeling recently.
+              </p>
+
+              <span class="card-link">
+                Start check-in →
+              </span>
+
+            </a>
+
+
+            <!-- SELF HELP -->
+
+            <a href="selfhelp.html" class="quick-card resources-card">
+
+              <div class="quick-icon green-icon">
+                🌿
+              </div>
+
+              <h3>Self-Help Resources</h3>
+
+              <p>
+                Explore practical guidance, coping strategies,
+                and information for everyday support.
+              </p>
+
+              <span class="card-link">
+                Explore resources →
+              </span>
+
+            </a>
+
+
+            <!-- HEALTHCARE -->
+
+            <a href="healthcare.html" class="quick-card support-card">
+
+              <div class="quick-icon blue-green-icon">
+                ♡
+              </div>
+
+              <h3>Healthcare Support</h3>
+
+              <p>
+                Find information about connecting with qualified
+                healthcare professionals and services.
+              </p>
+
+              <span class="card-link">
+                Find support →
+              </span>
+
+            </a>
+
+
+            <!-- PROFILE -->
+
+            <a href="profile.html" class="quick-card profile-card">
+
+              <div class="quick-icon purple-icon">
+                ⚙
+              </div>
+
+              <h3>Your Profile</h3>
+
+              <p>
+                Manage your preferences, privacy settings,
+                and well-being check history.
+              </p>
+
+              <span class="card-link">
+                View profile →
+              </span>
+
+            </a>
+
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= WELL-BEING JOURNEY ================= -->
+
+      <section class="journey-section">
+
+        <div class="section-container journey-layout">
+
+
+          <div class="journey-content">
+
+            <span class="section-tag">
+              YOUR JOURNEY
+            </span>
+
+            <h2>
+              Support can begin with
+              a simple check-in.
+            </h2>
+
+            <p>
+
+              BLOOM helps you understand emotional changes after
+              childbirth and discover appropriate next steps
+              without judgment or pressure.
+
+            </p>
+
+
+            <div class="journey-list">
+
+              <div class="journey-item">
+
+                <div class="journey-icon">
+                  01
+                </div>
+
+                <div>
+                  <h4>Check in</h4>
+
+                  <p>
+                    Take a guided well-being screening.
+                  </p>
+                </div>
+
+              </div>
+
+
+              <div class="journey-item">
+
+                <div class="journey-icon">
+                  02
+                </div>
+
+                <div>
+                  <h4>Understand</h4>
+
+                  <p>
+                    Learn what your responses may indicate.
+                  </p>
+                </div>
+
+              </div>
+
+
+              <div class="journey-item">
+
+                <div class="journey-icon">
+                  03
+                </div>
+
+                <div>
+                  <h4>Find support</h4>
+
+                  <p>
+                    Explore resources and professional care options.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- JOURNEY VISUAL -->
+
+          <div class="journey-visual">
+
+            <div class="journey-orbit orbit-one"></div>
+
+            <div class="journey-orbit orbit-two"></div>
+
+
+            <div class="journey-center">
+
+              <div class="journey-flower">
+                ✿
+              </div>
+
+              <strong>BLOOM</strong>
+
+              <span>Your support journey</span>
+
+            </div>
+
+
+            <div class="journey-bubble bubble-one">
+              💬
+            </div>
+
+            <div class="journey-bubble bubble-two">
+              🌱
+            </div>
+
+            <div class="journey-bubble bubble-three">
+              ♡
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= RESOURCE PREVIEW ================= -->
+
+      <section class="resource-preview">
+
+        <div class="section-container">
+
+
+          <div class="section-header center-header">
+
+            <span class="section-tag">
+              SUPPORT & LEARNING
+            </span>
+
+            <h2>
+              Small resources. Meaningful support.
+            </h2>
+
+            <p>
+
+              Explore information designed to help mothers and
+              families better understand the postpartum experience.
+            </p>
+
+          </div>
+
+
+          <div class="resource-grid">
+
+
+            <div class="resource-mini-card">
+
+              <div class="resource-number">01</div>
+
+              <div class="resource-mini-icon">🧠</div>
+
+              <h3>Understanding Emotional Changes</h3>
+
+              <p>
+                Learn about common emotional experiences after childbirth.
+              </p>
+
+            </div>
+
+
+            <div class="resource-mini-card">
+
+              <div class="resource-number">02</div>
+
+              <div class="resource-mini-icon">🌿</div>
+
+              <h3>Gentle Self-Care</h3>
+
+              <p>
+                Explore simple ways to care for yourself every day.
+              </p>
+
+            </div>
+
+
+            <div class="resource-mini-card">
+
+              <div class="resource-number">03</div>
+
+              <div class="resource-mini-icon">🤝</div>
+
+              <h3>Family Support</h3>
+
+              <p>
+                Help family members understand how they can support you.
+              </p>
+
+            </div>
+
+
+          </div>
+
+
+          <div class="resource-button-wrapper">
+
+            <a href="selfhelp.html" class="outline-btn">
+              View All Resources →
+            </a>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= EMERGENCY SUPPORT ================= -->
+
+      <section class="emergency-strip">
+
+        <div class="emergency-container">
+
+
+          <div class="emergency-icon">
+            !
+          </div>
+
+
+          <div class="emergency-content">
+
+            <h3>
+              Need immediate support?
+            </h3>
+
+            <p>
+              If you feel unsafe or believe you need urgent help,
+              please reach out to emergency or professional services.
+            </p>
+
+          </div>
+
+
+          <a href="emergency.html" class="emergency-btn">
+            Get Emergency Support
+          </a>
+
+
+        </div>
+
+      </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         SAME FOOTER FOR ALL BLOOM PAGES
+    ====================================================== -->
+
+    <footer class="bloom-footer">
+
+      <div class="footer-grid">
+
+
+        <div class="footer-brand">
+
+          <div class="brand">
+
+            <div class="brand-icon">✿</div>
+
+            <div class="brand-text">
+              <h2>BLOOM</h2>
+              <span>Postpartum Well-Being</span>
+            </div>
+
+          </div>
+
+
+          <p>
+
+            Supporting mothers and families beyond the hospital
+            through awareness, guidance, and early access to care.
+
+          </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>Explore</h4>
+
+          <a href="home.html">Home</a>
+
+          <a href="selfhelp.html">Resources</a>
+
+          <a href="screening.html">Well-Being Check</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>Support</h4>
+
+          <a href="healthcare.html">Healthcare Support</a>
+
+          <a href="emergency.html">Emergency Help</a>
+
+          <a href="profile.html">Settings</a>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>© 2026 BLOOM. All rights reserved.</p>
+
+        <p>This platform does not replace professional medical care.</p>
+
+      </div>
+
+    </footer>
+
+
+  </div>
+
+
+  <!-- JavaScript -->
+
+  <script src="/js/main.js"></script>
+
+  <script src="/js/home.js"></script>
+
+</body>
+
+</html>
+
